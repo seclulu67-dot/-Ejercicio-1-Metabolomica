@@ -1,0 +1,64 @@
+# Nombre: Lourdes Gallardo Ortiz
+# Materia: Metabolomica
+# Grupo: 2
+# Número de tarea: 2 Portafolio 1: Dataframe en R
+
+# =========================
+# CREACIÓN DE VECTORES
+# =========================
+
+# Vector A
+Pelicula <- c("Anora",
+              "The Brutalist",
+              "Flow",
+              "Emilia Pérez",
+              "Wicked",
+              "Dune: Part Two",
+              "I'm Still Here")
+
+# Vector B
+Premios_Oscar_2025 <- c("Mejor Película, Mejor Director, Mejor Actriz, Mejor Guion Original, Mejor Montaje",
+                        "Mejor Actor, Mejor Fotografía, Mejor Banda Sonora",
+                        "Mejor Película de Animación",
+                        "Mejor Actriz de Reparto, Mejor Canción Original",
+                        "Mejor Diseño de Vestuario, Mejor Diseño de Producción",
+                        "Mejor Sonido, Mejores Efectos Visuales",
+                        "Mejor Película Internacional")
+
+# Vector C
+Mes_estreno <- c("Enero",
+                 "Diciembre",
+                 "Diciembre",
+                 "Mayo",
+                 "Noviembre",
+                 "Marzo",
+                 "Febrero")
+
+# Vector D
+Recaudacion_mundial <- c(41000000,
+                         41400000,
+                         728000000,
+                         714000000,
+                         20000000,
+                         29900000,
+                         30000000)
+
+# =========================
+# CREACIÓN DEL DATAFRAME
+# =========================
+
+Peliculas_Oscar_2025 <- data.frame(
+  Pelicula,
+  Premios_Oscar_2025,
+  Mes_estreno,
+  Recaudacion_mundial
+)
+
+# Mostrar la tabla
+Peliculas_Oscar_2025
+
+# Ver estructura del dataframe
+str(Peliculas_Oscar_2025)
+
+# Resumen estadístico
+summary(Peliculas_Oscar_2025)
